@@ -4,5 +4,5 @@ DIR=$(ls .)
 
 for DIR in dir/*
 	do
-		ls | sort
+		ls | cut -d "-" -f 2- | sort
 	done
