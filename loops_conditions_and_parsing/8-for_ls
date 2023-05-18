@@ -3,5 +3,5 @@
 
 for DIR in .
 	do
-		[ ls | {#-*} ]
+		[[ ls | {#-*} ]]
 	done
