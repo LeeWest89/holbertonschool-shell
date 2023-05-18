@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #going to use a for loop and a new command i found.
-DIR=ls
+DIR=$ls
 
-for DIR in .
+for DIR in dir
 	do
 		echo "$DIR" | sort
 	done
