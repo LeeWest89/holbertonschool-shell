@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #going to use a for loop and a new command i found.
-LS=$(ls)
 
 for DIR in dir/.
 	do
-		$LS | cut -d "-" -f 2- | sort
+		find -type f | cut -d "-" -f 2- | sort
 	done
