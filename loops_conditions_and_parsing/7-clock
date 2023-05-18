@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Make a clock
 x=0
 
 while [ $x -le 12 ]
