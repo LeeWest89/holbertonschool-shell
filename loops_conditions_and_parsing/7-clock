@@ -6,13 +6,43 @@ while [ $x -le 12 ]
 do
 	case $x in
 		0)
-			echo "Hour: "$x""
+			echo "Hour: $x"
 			echo {1..59} | tr ' ' '\n';;
 		1)
-			echo "Hour: "$x""
+			echo "Hour: $x"
 			echo {1..59} | tr ' ' '\n';;
 		2)
-			echo "Hour: "$x""
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		3)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		4)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		5)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		6)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		7)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		8)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		9)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		10)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		11)
+			echo "Hour: $x"
+			echo {1..59} | tr ' ' '\n';;
+		12)
+			echo "Hour: $x"
 			echo {1..59} | tr ' ' '\n';;
 	esac
 	x=$((x+1))
