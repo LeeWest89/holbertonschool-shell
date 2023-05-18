@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-x is counting 1-10 and for every number is echoing Best School
+#x is counting 1-10 and for every number is echoing Best School
 for x in {1..10}
 	do
 		echo "Best School"
