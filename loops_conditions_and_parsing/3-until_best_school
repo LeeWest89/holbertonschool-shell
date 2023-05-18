@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#using a until loop to diplay Best School 10 times
+x=1
+until [ $x -le 10 ]
+	do
+		echo "Best School"
+		x=$((x+1))
+	done
