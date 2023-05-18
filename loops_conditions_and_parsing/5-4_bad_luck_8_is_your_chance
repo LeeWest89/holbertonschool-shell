@@ -3,13 +3,13 @@
 x=1
 while [ $x -le 10 ]
 	do
-	if [[ $x = {1..3} ]] && [[ $x = {5..7} ]] && [[ $x = {9..10} ]]
+	if [ $x = {1..3} ] && [ $x = {5..7} ] && [ $x = {9..10} ]
 	then
 		echo "Best School"
-	elif [[ $x = 4 ]]
+	elif [ $x = 4 ]
 	then
 		echo "bad luck"
-	else [[ $x = 8 ]]
+	else [ $x = 8 ]
 		echo "good luck"
 		x=$((x+1))
 	fi
