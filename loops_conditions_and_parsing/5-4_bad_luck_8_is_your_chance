@@ -3,8 +3,10 @@
 x=1
 while [ $x -le 10 ]
 	do
+	if [ $x -le 10 ]
+	then
 		echo "Best School"
-	if [ $x = 4 ]
+	elif [ $x = 4 ]
 	then
 		echo "bad luck"
 	else [ $x = 8 ]
