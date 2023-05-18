@@ -11,6 +11,6 @@ while [ $x -le 10 ]
 		echo "bad luck"
 	else
 		echo "Best School"
-		x=$((x+1))
 	fi
+	x=$((x+1))
 	done
