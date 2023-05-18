@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+x=0
+
+while [ $x -le 12 ]
+do
+	case $x in
+		0)
+			echo "Hour: "$x""
+			echo {1..59} | tr ' ' '\n';;
+		1)
+			echo "Hour: "$x""
+			echo {1..59} | tr ' ' '\n';;
+		2)
+			echo "Hour: "$x""
+			echo {1..59} | tr ' ' '\n';;
+	esac
+	x=$((x+1))
+done
