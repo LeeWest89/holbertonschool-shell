@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 #Script that tells rhe story of /etc/passwd
 
-L=$(grep $1)
-IFS=:
+F= /etc/passwd
 
-cat /etc/passwd | while read $L
+
+
+while FTS=F read file
 do
+	1=F read -r | cut -d ":" -f 1
+	2=F read -r | cut -d ":" -f 2
+	3=F read -r | cut -d ":" -f 3
+	4=F read -r | cut -d ":" -f 4
+	5=F read -r | cut -d ":" -f 5
+	6=F read -r | cut -d ":" -f 6
+	7=F read -r | cut -d ":" -f 7
 	echo "The user $1 is part of the $4 gang, lives in $6 and rides $7. $3's place is protected by the passcode $2, more info about the user here: $5"
-done
+done < F
