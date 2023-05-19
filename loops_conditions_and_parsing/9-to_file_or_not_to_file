@@ -2,14 +2,19 @@
 #making a for loop to see if a file exist, if its regular, and if its empty.
 for x in *
 do
-	if [ -e "$x" ] && echo "school file exists"
+	if [ -e "$x" ]
+	then
+		echo "school file exists"
 	else
 		echo "school file does not exist"
 	then
-		[ -s "$x" ] && echo "school file is not empty"
+		[ -s "$x" ]
+		echo "school file is not empty"
 	else
 		echo "school file is empty"
 	then
-		[ -f "$x" ] && echo "school is a regular file"
+		[ -f "$x" ]
+		echo "school is a regular file"
 	fi
 done
+
