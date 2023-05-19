@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#making a for loop to see if a file exist, if its regular, and if its empty.
+for x in school
+do
+	if [ -e "$x" ]
+	then
+		echo "school file exist"
+	else
+		echo "school file does not exist"
+	fi
+	if [ -e "$x" ] && [ -f "$x" ]
+	then
+		echo "school is a regular file"
+	fi
+	if [ -e "$x" ] && [ -s "$x" ]
+	then
+		echo "school file is not empty"
+	else
+		echo "school file is empty"
+	fi
+done
