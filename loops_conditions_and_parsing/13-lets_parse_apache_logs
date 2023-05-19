@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that shows vistor IP and HTTP status code from apache-access.log
+
+f=/apache-access.log
+
+cat $f | awk '{print $1} | cut -d] -f1 | sort
