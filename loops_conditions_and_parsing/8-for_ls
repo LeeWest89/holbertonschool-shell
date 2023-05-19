@@ -3,7 +3,7 @@
 
 for DIR in *
 	do
-		if [ -f $DIR ]
+		if [ -f "$DIR" ]
 		then
 		echo "$DIR" | cut -d "-" -f 2- | sort
 		fi
