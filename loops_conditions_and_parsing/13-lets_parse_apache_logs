@@ -3,4 +3,4 @@
 
 
 
-cat apache-access.log | awk '{print $1, $9}' | sort
+cat apache-access.log | awk '{print $1, $9}'
