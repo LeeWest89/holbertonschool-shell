@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 #going to use a for loop and a new command i found.
 
-for DIR in $(find ./*)
+for DIR in *
 	do
+		if [ -f $DIR ]
+		then
 		echo "$DIR" | cut -d "-" -f 2- | sort
+		fi
 	done
