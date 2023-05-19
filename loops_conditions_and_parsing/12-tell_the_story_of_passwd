@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 #Script that tells rhe story of /etc/passwd
 
-LINE=cat /etc/passwd | grep $1
+LINE=$(cat /etc/passwd | grep $1)
 IFS=:
+set=LINE
 
 while cat /etc/passwd
 do
