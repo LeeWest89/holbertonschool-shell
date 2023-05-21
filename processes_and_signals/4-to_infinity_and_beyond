@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Making an infite loop
+
+x=1
+
+while [ $x -ge 0 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
