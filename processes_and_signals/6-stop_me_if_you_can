@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # stopping a script without kill or killall commands
 
-exit
+pkill -9
