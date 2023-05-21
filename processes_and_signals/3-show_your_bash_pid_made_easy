@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Script that diplays the PID and process name that contain the word bash.
 
-pids=$(pgrep <bash>)
+pgrep bash
