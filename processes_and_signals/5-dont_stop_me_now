@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Script that kills 4-to_infinity_and_beyond process.
 
-kill `ps -C 4-to_infinity_and_beyond -o pid=`
+kill $(ps -C 4-to_infinity_and_beyond -o pid=)
 
