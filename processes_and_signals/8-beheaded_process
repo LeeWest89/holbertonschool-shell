@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Beheading the Highlander
 
-killall ./7-highlander
+pgrep -af '7-highlander' | xargs -r kill
