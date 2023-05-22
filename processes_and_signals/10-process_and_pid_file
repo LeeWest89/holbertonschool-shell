@@ -11,10 +11,11 @@ do
 	if trap 15
 	then
 		echo "I hate the kill command"
+		rm -r /var/run/myscript.pid
 	elif trap 2
 	then
 		echo "Y U no love me?!"
-	elif trap 3; 15;
+	elif trap 3
 	then
 		rm -r /var/run/myscript.pid
 	fi
