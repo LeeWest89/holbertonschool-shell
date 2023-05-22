@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # stopping a script without kill or killall commands
 
-pkill -9
+pkill 'bash ./4-to_infinity_and_beyond'
