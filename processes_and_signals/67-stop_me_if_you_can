@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stopping a script without kill or killall commands
+
+pkill -f '7-highlander'
