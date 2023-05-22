@@ -6,4 +6,7 @@ while [ $x -ge 0 ]
 do
 echo "To infinity and beyond"
 sleep 2
+if [ trap 15 ]
+then
+echo "I am invincible!!!"
 done
