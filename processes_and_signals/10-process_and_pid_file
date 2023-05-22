@@ -14,7 +14,7 @@ do
 	elif trap 2
 	then
 		echo "Y U no love me?!"
-	elif trap 3 15
+	elif trap 3; 15;
 	then
 		rm -r /var/run/myscript.pid
 	fi
