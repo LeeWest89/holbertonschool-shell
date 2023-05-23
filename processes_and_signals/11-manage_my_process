@@ -5,17 +5,17 @@ case "$1" in
 	start)
 		echo $$ > /var/run/my_process.pid
 		echo "manage_my_process started"
-		sudo /holbertonschool-shell/processes_and_signals/manage_my_process start
+		sudo systemctl start manage_my_process
 		;;
 
 	stop)
 		echo "manage_my_process stopped"
-		sudo /holbertonschool-shell/processes_and_signals/manage_my_process stop
+		sudo systemctl stop manage_my_process
 		rm -r /var/run/my_process.pid
 		;;
 	
 	restart)
-		sudo /holbertonschool-shell/processes_and_signals/manage_my_process restart
+		sudo systemctl restart manage_my_process
 		rm -r /var/run/my_process.pid
 		echo $$ > /var/run/my_process.pid
 		echo "manage_my_process restarted"
