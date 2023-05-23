@@ -3,20 +3,21 @@
 
 case "$1" in
 	start)
+		./manage_my_process
 		echo $$ > /var/run/my_process.pid
 		echo "manage_my_process started"
-		sudo ~/manage_my_process start
 		;;
 
 	stop)
+		pkill -f manage_my_process
 		echo "manage_my_process stopped"
-		sudo ~/manage_my_process stop
 		rm -r /var/run/my_process.pid
 		;;
 	
 	restart)
-		sudo ~/manage_my_process restart 
+		pkill -f manage_my_process 
 		rm -r /var/run/my_process.pid
+		./manage_my_process
 		echo $$ > /var/run/my_process.pid
 		echo "manage_my_process restarted"
 		;;
