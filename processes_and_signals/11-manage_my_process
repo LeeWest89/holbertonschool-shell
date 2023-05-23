@@ -19,8 +19,8 @@ case "$1" in
 		rm -r /var/run/my_process.pid
 		echo "manage_my_process stopped"
 		./manage_my_process &
-		echo "$!" > /var/run/my_process.pid
 		echo "manage_my_process restarted"
+		echo "$!" > /var/run/my_process.pid
 		;;
 
 	*)
