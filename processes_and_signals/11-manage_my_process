@@ -6,10 +6,20 @@ case "$1" in
 	start)
 		echo $$ > /var/run/my_process.pid
 		echo "manage_my_process started"
-		sudo  ./manage_my_process start
+		sudo ./manage_my_process start
 
 	stop)
 		echo "manage_my_process stopped"
 		sudo ./manage_my_process stop
 		rm -r /var/run/my_process.pid
+	
+	restart)
+		sudo ./manage_my_process stop
+		rm -r /var/run/my_process.pid
+		sudo ./manage_my_process start
+		echo $$ > /var/run/my_process.pid
+		echo "manage_my_process restarted"
+
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}"
 esac
