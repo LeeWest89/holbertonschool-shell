@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
 # working with sudo to manage /manage_my_process
+
+case "$1" in
+
+	start)
+		echo $$ > /var/run/my_process.pid
+		echo "manage_my_process started"
+		sudo  /holbertonschool-shell/process_and_signals/manage_my_process start
+esac
